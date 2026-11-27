@@ -1,0 +1,2 @@
+import{j as e}from"./index-f7lTt4hE.js";function c({count:s=6}={}){return e.jsx("div",{className:"product-grid",children:Array.from({length:s}).map((a,t)=>e.jsxs("article",{className:"product-card",children:[e.jsx("div",{className:"skeleton-image"}),e.jsxs("div",{className:"product-card-content",children:[e.jsx("div",{className:"skeleton-text title"}),e.jsx("div",{className:"skeleton-text",style:{width:"40%"}}),e.jsx("div",{className:"skeleton-text price"})]})]},t))})}export{c as P};
+//# sourceMappingURL=LoadingSkeleton-DtgPMMAm.js.map

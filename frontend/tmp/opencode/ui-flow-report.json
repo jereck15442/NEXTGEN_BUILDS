@@ -1,0 +1,127 @@
+{
+  "uiEmail": "nextgen.ui.1795670184915@example.com",
+  "uiPassword": "TestPass123!",
+  "adminProductName": "UI Test GPU 1795670184915",
+  "externalUrl": "https://payments-web-sandbox.maya.ph/v2/checkout?id=539e334a-e3cf-4883-ac6a-4dcb239559fa",
+  "consoleMessages": [],
+  "pageErrors": [],
+  "passed": 22,
+  "failed": 1,
+  "results": [
+    {
+      "name": "UI registration signs the new user in",
+      "ok": true,
+      "detail": "path=/ user=nextgen.ui.1795670184915@example.com"
+    },
+    {
+      "name": "product grid is two columns at 390px",
+      "ok": true,
+      "detail": "columns=2"
+    },
+    {
+      "name": "product grid add-to-cart updates the header badge",
+      "ok": true,
+      "detail": "badge=Cart, 1 items"
+    },
+    {
+      "name": "cart quantity increase updates the line",
+      "ok": true,
+      "detail": "1 → 2"
+    },
+    {
+      "name": "cart remove empties the cart",
+      "ok": true,
+      "detail": "empty state shown"
+    },
+    {
+      "name": "checkout explains the backend delivery limitation",
+      "ok": true,
+      "detail": "delivery + payment notices present"
+    },
+    {
+      "name": "checkout does not render fake shipping fields",
+      "ok": true,
+      "detail": "shippingInputs=0"
+    },
+    {
+      "name": "placing an order redirects to the provider sandbox URL",
+      "ok": true,
+      "detail": "https://payments-web-sandbox.maya.ph/v2/checkout?id=539e334a-e3cf-4883-ac6a-4dcb239559fa"
+    },
+    {
+      "name": "order history shows the new order as pending",
+      "ok": true,
+      "detail": "pending visible"
+    },
+    {
+      "name": "order details show pending payment and cancellation",
+      "ok": true,
+      "detail": "pending + cancel visible"
+    },
+    {
+      "name": "order cancellation updates both statuses in the UI",
+      "ok": true,
+      "detail": "notice + cancelled status"
+    },
+    {
+      "name": "AI advisor returns a compatible recommendation",
+      "ok": false,
+      "detail": "Timed out waiting for: document.body.innerText.includes('AI Recommendation Results')"
+    },
+    {
+      "name": "PC Builder validates against the compatibility endpoint",
+      "ok": true,
+      "detail": "compatible result shown"
+    },
+    {
+      "name": "PC Builder saves a named build",
+      "ok": true,
+      "detail": "saved notice shown"
+    },
+    {
+      "name": "PC Builder adds the saved build to the cart",
+      "ok": true,
+      "detail": "navigated to cart"
+    },
+    {
+      "name": "account menu sign-out clears the session",
+      "ok": true,
+      "detail": "token removed"
+    },
+    {
+      "name": "admin login through the UI works",
+      "ok": true,
+      "detail": "role=admin"
+    },
+    {
+      "name": "admin create product appears in the dashboard",
+      "ok": true,
+      "detail": "UI Test GPU 1795670184915"
+    },
+    {
+      "name": "admin low-stock panel uses the dedicated endpoint",
+      "ok": true,
+      "detail": "new low-stock item visible"
+    },
+    {
+      "name": "admin edit product updates the list and clears low stock",
+      "ok": true,
+      "detail": "price updated"
+    },
+    {
+      "name": "edited product leaves the low-stock panel",
+      "ok": true,
+      "detail": "stillLowStock=false"
+    },
+    {
+      "name": "admin deactivate removes the product from the catalog list",
+      "ok": true,
+      "detail": "product removed"
+    },
+    {
+      "name": "deactivated admin product is absent from the public catalog",
+      "ok": true,
+      "detail": "catalog items=7"
+    }
+  ]
+}

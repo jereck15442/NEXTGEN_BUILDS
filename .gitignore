@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Environment files (contain secrets)
+.env
+.env.local
+
+# MCP configuration (contains the Atlas connection-string password)
+.mcp.json
+
+# Logs
+mcp-logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db

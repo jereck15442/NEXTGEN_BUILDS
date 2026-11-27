@@ -1,0 +1,39 @@
+{
+  "name": "pc-parts-store-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend REST API for the AI-enhanced PC Parts Store with compatibility checking and build advice.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "test:db": "node test-db.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "docs:check": "node scripts/check-openapi.js"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "bcryptjs": "latest",
+    "cors": "latest",
+    "dotenv": "^18.0.10",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "jsonwebtoken": "latest",
+    "mongodb": "^7.9.1",
+    "mongoose": "latest",
+    "swagger-ui-express": "latest",
+    "yaml": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "latest",
+    "supertest": "latest",
+    "vitest": "latest"
+  }
+}

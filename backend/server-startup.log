@@ -1,0 +1,38 @@
+PC Parts Store API listening on port 4000
+VersionError: No matching document found for id "6b078f289a48dd34a5318190" version 4 modifiedPaths "items"
+    at generateVersionError (C:\Users\User\Desktop\Bodiongan_Jereck_labact10\backend\node_modules\mongoose\lib\model.js:599:10)
+    at model.save (C:\Users\User\Desktop\Bodiongan_Jereck_labact10\backend\node_modules\mongoose\lib\model.js:661:30)
+    at Module.removeItem (file:///C:/Users/User/Desktop/Bodiongan_Jereck_labact10/backend/src/services/cart.service.js:45:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///C:/Users/User/Desktop/Bodiongan_Jereck_labact10/backend/src/controllers/cart.controller.js:17:12 {
+  version: 4,
+  modifiedPaths: [ 'items' ]
+}
+VersionError: No matching document found for id "6b078f289a48dd34a5318190" version 5 modifiedPaths "items"
+    at generateVersionError (C:\Users\User\Desktop\Bodiongan_Jereck_labact10\backend\node_modules\mongoose\lib\model.js:599:10)
+    at model.save (C:\Users\User\Desktop\Bodiongan_Jereck_labact10\backend\node_modules\mongoose\lib\model.js:661:30)
+    at Module.removeItem (file:///C:/Users/User/Desktop/Bodiongan_Jereck_labact10/backend/src/services/cart.service.js:45:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async file:///C:/Users/User/Desktop/Bodiongan_Jereck_labact10/backend/src/controllers/cart.controller.js:17:12 {
+  version: 5,
+  modifiedPaths: [ 'items' ]
+}
+Order event {
+  event: 'order.cancelled',
+  orderId: '6b07f91868cb1d59e9171fd3',
+  paymentStatus: 'cancelled',
+  fulfillmentStatus: 'cancelled'
+}
+Order event {
+  event: 'order.cancelled',
+  orderId: '6b07f8e068cb1d59e9171fd1',
+  paymentStatus: 'cancelled',
+  fulfillmentStatus: 'cancelled'
+}
+Order event {
+  event: 'order.cancelled',
+  orderId: '6b078f6b9a48dd34a5318191',
+  paymentStatus: 'cancelled',
+  fulfillmentStatus: 'cancelled'
+}
+^C

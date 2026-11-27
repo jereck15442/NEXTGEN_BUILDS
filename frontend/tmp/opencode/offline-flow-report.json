@@ -1,0 +1,105 @@
+{
+  "app": "http://127.0.0.1:4173",
+  "email": "nextgen.ui.1795656786055@example.com",
+  "consoleMessages": [],
+  "pageErrors": [],
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "name": "service worker and caches reset before installability check",
+      "ok": true,
+      "detail": "clean state"
+    },
+    {
+      "name": "service worker registers and activates",
+      "ok": true,
+      "detail": "scope=http://127.0.0.1:4173/"
+    },
+    {
+      "name": "service worker controls the app page",
+      "ok": true,
+      "detail": "controller present"
+    },
+    {
+      "name": "web app manifest is valid",
+      "ok": true,
+      "detail": "name=NextGen Builds - AI-Enhanced PC Parts Store display=standalone errors=0"
+    },
+    {
+      "name": "manifest includes 192px, 512px, and maskable icons",
+      "ok": true,
+      "detail": "icons=192x192/any, 512x512/any, 512x512/maskable"
+    },
+    {
+      "name": "manifest icons decode in the browser",
+      "ok": true,
+      "detail": "decoded=3/3"
+    },
+    {
+      "name": "Chrome reports no PWA installability errors",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "name": "production login works",
+      "ok": true,
+      "detail": "token=present"
+    },
+    {
+      "name": "product API response is cached by the service worker",
+      "ok": true,
+      "detail": "entries=4"
+    },
+    {
+      "name": "cart snapshot is stored for offline use",
+      "ok": true,
+      "detail": "items=2 savedAt=2026-11-26T02:46:40.211Z"
+    },
+    {
+      "name": "browser reports offline state",
+      "ok": true,
+      "detail": "navigator.onLine=false"
+    },
+    {
+      "name": "offline banner appears",
+      "ok": true,
+      "detail": "You are offline. Cached catalog and cart are still available. Offline help"
+    },
+    {
+      "name": "offline catalog renders cached products",
+      "ok": true,
+      "detail": "cards=7"
+    },
+    {
+      "name": "offline cart shows the saved snapshot",
+      "ok": true,
+      "detail": "snapshot notice visible"
+    },
+    {
+      "name": "offline checkout is blocked",
+      "ok": true,
+      "detail": "PlaceOrder.disabled=true"
+    },
+    {
+      "name": "offline login is blocked",
+      "ok": true,
+      "detail": "SignIn.disabled=true"
+    },
+    {
+      "name": "offline AI recommendations are blocked",
+      "ok": true,
+      "detail": "AI.disabled=true"
+    },
+    {
+      "name": "precached offline.html is reachable offline",
+      "ok": true,
+      "detail": "fallback page rendered"
+    },
+    {
+      "name": "app recovers when the connection returns",
+      "ok": true,
+      "detail": "catalog reloaded online"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+openapi: 3.0.3
+info:
+  title: AI-Enhanced PC Parts Store API
+  version: 1.0.0
+servers:
+  - url: http://localhost:4000
+tags:
+  - name: Authentication
+  - name: Products
+  - name: Cart
+  - name: Orders
+  - name: Compatibility
+  - name: Builds
+  - name: Advisor
+paths:
+  /api/v1/auth/register:
+    post:
+      tags: [Authentication]
+      summary: Register a customer
+      responses:
+        '201': { description: Registered }
+  /api/v1/auth/login:
+    post:
+      tags: [Authentication]
+      summary: Log in
+      responses:
+        '200': { description: Authenticated }
+  /api/v1/products:
+    get:
+      tags: [Products]
+      summary: List active products
+      parameters:
+        - { in: query, name: page, schema: { type: integer } }
+        - { in: query, name: limit, schema: { type: integer } }
+        - { in: query, name: category, schema: { type: string } }
+        - { in: query, name: search, schema: { type: string } }
+      responses:
+        '200': { description: Paginated products }
+  /api/v1/cart/items:
+    post:
+      tags: [Cart]
+      security: [{ bearerAuth: [] }]
+      responses:
+        '201': { description: Cart item added }
+  /api/v1/orders:
+    post:
+      tags: [Orders]
+      security: [{ bearerAuth: [] }]
+      responses:
+        '201': { description: Order created }
+  /api/v1/compatibility/check:
+    post:
+      tags: [Compatibility]
+      responses:
+        '200': { description: Compatibility result }
+  /api/v1/builds:
+    post:
+      tags: [Builds]
+      security: [{ bearerAuth: [] }]
+      responses:
+        '201': { description: Build saved }
+  /api/v1/advisor/recommend:
+    post:
+      tags: [Advisor]
+      security: [{ bearerAuth: [] }]
+      responses:
+        '200': { description: AI or catalog-based PC recommendation }
+        '503': { description: Advisor unavailable }
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
